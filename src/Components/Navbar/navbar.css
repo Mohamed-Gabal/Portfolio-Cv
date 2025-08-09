@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 100px;
+}
+.navbar .logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar .logo a:hover {
+}
+.navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.navbar .nav-connect {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #8923e1 102%);
+  font-size: 22px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.navbar .nav-connect:hover {
+  transform: scale(1.05);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1024px) {
+  .navbar {
+    margin: 20px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px;
+  }
+
+  .navbar .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+  }
+
+  .navbar .nav-connect {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    margin: 10px;
+    gap: 10px;
+  }
+
+  .navbar .logo a {
+    font-size: 20px;
+  }
+
+  .navbar .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .navbar .nav-connect {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
